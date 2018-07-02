@@ -26,8 +26,8 @@ jobs:
           # fallback to using the latest cache if no exact match is found 
           - v1-dependencies-
 
-      - run: yarn ng build --prod
-      - run: yarn ng test --single-run
+      - run:   ng build --prod
+      - run:   ng test --single-run
 
       - save_cache:
           paths:
